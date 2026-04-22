@@ -166,27 +166,93 @@ Good luck. The steer demo is worth it.
 
 ---
 
-## The blog post
+## Building in public
 
-Once you've shipped the Phase 3 PR, write a post about it. Not a tutorial. Not a "here's what I learned" listicle. A real account of what it was like.
+This project is worth sharing as you go. Not after it's done — during.
 
-**Inspiration:** [Maggie Appleton — One Developer, Two Dozen Agents, Zero Alignment](https://maggieappleton.com) — a staff research engineer at GitHub talking about collaborative AI engineering. Great voice, digital garden format, no corporate polish.
+You're a junior developer making upstream contributions to a 57K-star repo while learning scalability engineering from a real book via real production code. That's an unusual and specific story. There are people who want to follow it.
 
-Your angle is better. Maggie is presenting a research prototype from inside GitHub. You're a developer who was handed a real open-source project, learned scalability engineering by reading production code, and made upstream PRs to a 57K-star repo. That's a first-person account, not a talk.
+Here's how to do it without it feeling like marketing.
 
-**What the post should cover:**
+### Your niche and audience
 
-- What `paperclip-steering` is and why mid-flight agent steering matters
-- What it's actually like to onboard onto a production codebase as a junior dev
-- How the scalability book chapters mapped to real decisions (the heartbeat scheduler as a message queue, the adapter as a stateless service layer)
-- The ColeMurray pattern — learning via upstream contributions, merged PRs as the artifact
-- The steer demo: what it looks like when it works
+**Who you're talking to:** Developers early in their careers who want to learn by doing, not by tutorial. People following the AI agent space who want a ground-level account, not a research talk. Open-source contributors who know the gap between "forked a repo" and "merged a PR."
 
-**The demo recording is required.** Screen record the moment an agent is mid-task writing something real, you type a redirect into the Steer button, and it pivots in-place. That's the lede. Put it at the top of the post.
+**Your one thing (for now):** Learning scalability engineering in public through upstream contributions to a production AI orchestration platform.
 
-**Format:** Digital garden style — [Maggie's site](https://maggieappleton.com) is the reference. Evergreen, not time-stamped. "Planted" date, not a publication date. Personal voice.
+That's specific enough to attract the right people and specific enough to mean something.
 
-**Where to publish:** Wherever you already write, or start a garden. The post should link back to the PR so people can see the real thing.
+### What to post and when
+
+Two types of content — both matter:
+
+**Visibility content** (gets seen by new people):
+- The demo video when Phase 3 ships (see below — this is your launch moment)
+- Thread announcing the merged PR
+- "This is what I found inside a 57K-star codebase" posts — specific, surprising things
+- Screenshots of the steer feature working in the UI
+
+**Connection content** (converts viewers into followers who stick):
+- Building-in-public updates at the end of each phase — what you built, what you learned, what was harder than expected
+- The blog post (after Phase 3)
+- Genuine replies to other developers talking about AI agents and orchestration
+
+**Platform:** X/Twitter first. The AI agent and open-source audience lives there. If you write longer, add a Substack or garden later.
+
+### Building-in-public update format (end of each phase)
+
+One post per phase. Short. Real numbers if you have them.
+
+```
+Just finished Phase [N] of contributing to @paperclipai (57K stars).
+
+What I built: [one sentence]
+What I learned: [one sentence about the scalability chapter]
+What surprised me: [one honest thing]
+
+Next: [what Phase N+1 looks like]
+
+PR: [link when it exists]
+```
+
+That's it. Don't explain the whole project every time. Let it accumulate.
+
+### The demo video (Phase 3 — most important piece)
+
+When the steer feature works, record a 60-second demo. This is the launch moment for everything — the PR, the blog post, the thread. Get this right.
+
+**Structure:**
+```
+0:00–0:01   Hook — bold text: "AI agent redirected mid-task. No restart."
+0:01–0:05   Show the UI — Paperclip kanban, agent running, Steer button visible
+0:05–0:10   Setup — "Agent is writing supplier copy. I want to change direction."
+0:10–0:50   The demo — type into Steer, agent pivots, show it continuing without restart
+0:50–1:00   Close — "PR open: [link]. Built as part of @paperclipai"
+```
+
+One feature only. Don't show the kanban board setup, the heartbeat, the budget caps. Show the steer working. That's the whole demo.
+
+Record it on your real machine with a real task — not a fake "hello world" task. The agent should be doing something a real person would care about redirecting. Supplier copy, a PR description, a social caption — something with enough content that the pivot is visible and meaningful.
+
+Post it on X first. Then embed it in the blog post.
+
+### The blog post
+
+Write it after Phase 3 ships. This is connection content — it converts people who saw the demo into people who actually follow your work.
+
+**Inspiration:** [Maggie Appleton — One Developer, Two Dozen Agents, Zero Alignment](https://maggieappleton.com) — a staff research engineer at GitHub on collaborative AI engineering. Good voice, digital garden format, no corporate polish.
+
+Your angle is more personal. Maggie is presenting from inside GitHub. You're a developer who was handed a real project by someone who trusted you with it, learned from production code, and shipped upstream. That's a first-person account.
+
+**What to cover:**
+- What made you nervous about onboarding onto a 57K-star repo as a junior dev
+- The moment you understood why the heartbeat scheduler is a message queue (Ch 7)
+- What the steer feature actually feels like when it works — describe it as a user, not as the person who built it
+- What you'd tell someone else who wants to learn this way
+
+**Format:** Digital garden style. Evergreen, not time-stamped. "Planted" date. Personal voice. Link to the merged PR prominently — that's the proof.
+
+**Where to publish:** Wherever you already write, or start a garden. The post should link back to the PR.
 
 ---
 
