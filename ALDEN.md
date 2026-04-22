@@ -163,3 +163,39 @@ If you're stuck, the best places:
 - **Ask Haziq** — he's been through Phases 0 and 1 already
 
 Good luck. The steer demo is worth it.
+
+---
+
+## The blog post
+
+Once you've shipped the Phase 3 PR, write a post about it. Not a tutorial. Not a "here's what I learned" listicle. A real account of what it was like.
+
+**Inspiration:** [Maggie Appleton — One Developer, Two Dozen Agents, Zero Alignment](https://maggieappleton.com) — a staff research engineer at GitHub talking about collaborative AI engineering. Great voice, digital garden format, no corporate polish.
+
+Your angle is better. Maggie is presenting a research prototype from inside GitHub. You're a developer who was handed a real open-source project, learned scalability engineering by reading production code, and made upstream PRs to a 57K-star repo. That's a first-person account, not a talk.
+
+**What the post should cover:**
+
+- What `paperclip-steering` is and why mid-flight agent steering matters
+- What it's actually like to onboard onto a production codebase as a junior dev
+- How the scalability book chapters mapped to real decisions (the heartbeat scheduler as a message queue, the adapter as a stateless service layer)
+- The ColeMurray pattern — learning via upstream contributions, merged PRs as the artifact
+- The steer demo: what it looks like when it works
+
+**The demo recording is required.** Screen record the moment an agent is mid-task writing something real, you type a redirect into the Steer button, and it pivots in-place. That's the lede. Put it at the top of the post.
+
+**Format:** Digital garden style — [Maggie's site](https://maggieappleton.com) is the reference. Evergreen, not time-stamped. "Planted" date, not a publication date. Personal voice.
+
+**Where to publish:** Wherever you already write, or start a garden. The post should link back to the PR so people can see the real thing.
+
+---
+
+## Using this stack to build your own projects
+
+Once `background-agents-pi` is set up, use it for your own projects — not just this one.
+
+[`Goober-Codes/background-agents-pi`](https://github.com/Goober-Codes/background-agents-pi) is a fork of Open-Inspect that replaces the cloud execution layer with Pi (as the coding agent) running inside Daytona dev environments. [`Goober-Codes/daytona-pi`](https://github.com/Goober-Codes/daytona-pi) is the Daytona fork wired up with Gondolin (VM-level network security) and Absurd (durable workflows on Postgres).
+
+The setup gives you: Pi coding agents running in isolated cloud VMs, with durable workflows so work survives interruptions. It's the same Pi you're working with in `paperclip-steering` — just in a background-agent setup instead of an orchestrated one.
+
+Use it on your own projects alongside this one. The best way to understand what you're building is to use the tools you're building around.
